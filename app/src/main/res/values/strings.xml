@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RecyclerViewTesting</string>
+    <string name="post_image_contents">Post Image Contents</string>
+    <string name="user_profile_image">User Profile Image</string>
+</resources>
