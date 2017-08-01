@@ -20,15 +20,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RecyclerView shit = (RecyclerView) findViewById(R.id.rvPosts);
+        RecyclerView rv = (RecyclerView) findViewById(R.id.rvPosts);
 
         posts = Post.createPostsList();
 
         PostsAdapter adapter = new PostsAdapter(this, posts);
 
-        shit.setAdapter(adapter);
+        rv.setAdapter(adapter);
 
-        shit.setLayoutManager(new LinearLayoutManager(this));
+        rv.setLayoutManager(new LinearLayoutManager(this));
 
         Calendar c = Calendar.getInstance();
         SimpleDateFormat df = new SimpleDateFormat("MMM-dd-yyyy");
